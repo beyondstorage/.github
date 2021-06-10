@@ -19,3 +19,7 @@ branches:
         dismiss_stale_reviews: true
       required_status_checks:
         strict: true
+      enforce_admins: false
+      required_linear_history: false
+      restrictions: null
+
