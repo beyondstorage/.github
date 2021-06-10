@@ -19,4 +19,3 @@ branches:
         dismiss_stale_reviews: true
       required_status_checks:
         strict: true
-
