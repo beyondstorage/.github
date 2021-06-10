@@ -1,0 +1,23 @@
+repository:
+  has_issues: true
+  has_downloads: true
+  default_branch: master
+  allow_squash_merge: true
+  # We don't allow merge commits
+  allow_merge_commit: false
+  # We don't allow rebase commits
+  allow_rebase_merge: false
+  delete_branch_on_merge: true
+  enable_automated_security_fixes: true
+  enable_vulnerability_alerts: true
+
+branches:
+  - name: master
+    protection:
+      required_pull_request_reviews:
+        required_approving_review_count: 1
+        dismiss_stale_reviews: true
+      required_status_checks:
+        strict: true
+
+
